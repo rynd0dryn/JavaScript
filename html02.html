@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Page</title>
+    <script type = "text/javascript">
+        function displayInput()
+        {
+            var testInput = document.getElementById("name").value;
+
+            if(testInput.length == 0)
+            {
+                document.getElementById("para").innerHTML = "Hey, you didn't type anything!";
+            }
+            else
+            {
+                document.getElementById("para").innerHTML = testInput;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <H1 style = "color:blue">Let's see another Button</H1>
+    <input id = "name" type = "text"/>
+    <button onclick = "displayInput()";>Color It</button>
+    <p id = "para" style = "color:blue"></p>
+    
+</body>
+</html>

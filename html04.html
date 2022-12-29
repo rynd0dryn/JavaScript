@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Page</title>
+    <script>
+
+        function myPrompt()
+        {
+            var person = prompt("Please enter your name");
+            if (person != "")
+            {
+                document.getElementById("test").innerHTML = 
+                "Hello " + person + "! How are you today?";
+            }
+            else
+            {
+                document.getElementById("test").innerHTML = 
+                "Who are you?";
+            }
+        }
+    </script>
+</head>
+<body>
+    <H2>JavaScript Prompt Box</H2>
+    <button onclick = "myPrompt()";>Click Me</button>
+    <p id = "test"></p>
+    
+</body>
+</html>
